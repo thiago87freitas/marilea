@@ -1,1 +1,1 @@
-printf "web: gunicorn --bind :\$PORT app:app\n" > Procfile
+web: gunicorn --bind :$PORT app:app
