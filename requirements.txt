@@ -1,1 +1,2 @@
-printf "flask==3.0.3\ngunicorn==21.2.0\n" > requirements.txt
+flask==3.0.3
+gunicorn==22.0.0
