@@ -1,19 +1,4 @@
-# salve este conteúdo num arquivo separado
-"""
 flask==3.0.3
 flask-login==0.6.3
 gunicorn==22.0.0
 twilio==9.2.4
-"""
-
-
-# -------------- Procfile --------------
-"""
-web: gunicorn --bind :$PORT app:app
-"""
-
-
-# -------------- .python-version --------------
-"""
-3.12.3
-"""
