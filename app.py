@@ -67,18 +67,18 @@ login_manager.login_view = "login"
 
 
 def get_db():
-db = getattr(g, "_db", None)
-if db is None:
-db = g._db = sqlite3.connect(DB_PATH)
-db.row_factory = sqlite3.Row
-return db
+    db = getattr(g, "_db", None)
+    if db is None:
+        db = g._db = sqlite3.connect(DB_PATH)
+        db.row_factory = sqlite3.Row
+    return db
 
 
 @app.teardown_appcontext
 def close_db(exception):
-db = getattr(g, "_db", None)
-if db is not None:
-db.close()
+    db = getattr(g, "_db", None)
+    if db is not None:
+        db.close()
 
 
 SCHEMA_SQL = """
